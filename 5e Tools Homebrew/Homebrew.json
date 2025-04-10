@@ -1,0 +1,348 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "MyHomebrew",
+				"abbreviation": "MHB",
+				"full": "My Homebrew",
+				"version": "1.0.0",
+				"authors": [
+					"MyNameIsGuzse"
+				],
+				"color": "ff004f"
+			}
+		]
+	},
+	"monster": [
+		{
+			"name": "Yuni (Pirate Admiral)",
+			"source": "MyHomebrew",
+			"page": 242,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"shifter"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"condition": "Unarmored"
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 36",
+				"average": 90
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 14,
+			"dex": 20,
+			"con": 16,
+			"int": 12,
+			"wis": 14,
+			"cha": 19,
+			"save": {
+				"str": "+6",
+				"dex": "+10",
+				"wis": "+6",
+				"cha": "+8"
+			},
+			"skill": {
+				"acrobatics": "+9",
+				"sleight of hand": "+9",
+				"stealth": "+9",
+				"perception": "+6"
+			},
+			"passive": 16,
+			"languages": [
+				"Common plus one other language"
+			],
+			"cr": "12",
+			"gear": [
+				"pistol|xphb",
+				"scimitar|xphb"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The pirate makes three attacks, using Scimitar or Pistol in any combination."
+					]
+				},
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atkr m} {@hit 9}, reach 5 ft. {@h}15 ({@damage 3d6 + 5}) Slashing damage plus 7 ({@damage 2d6}) Poison damage, and the target suffers one of the following effects of the pirate's choice:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Awestruck",
+									"entries": [
+										"The target has the {@condition Charmed|XPHB} condition until the start of the pirate's next turn."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Poison",
+									"entries": [
+										"The target has the {@condition Poisoned|XPHB} condition until the start of the pirate's next turn."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Pistol",
+					"entries": [
+						"{@atkr r} {@hit 10}, range 30/90 ft. {@h}27 ({@damage 4d10 + 5}) Piercing damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Rally (1/Day)",
+					"entries": [
+						"The pirate chooses up to three other creatures it can see within 30 feet. Until the start of the pirate's next turn, the targets have {@variantrule Advantage|XPHB} on attack rolls and saving throws."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Uncanny Dodge",
+					"entries": [
+						"{@actTrigger} The pirate takes damage. {@actResponse} The pirate reduces the damage by half, rounded down."
+					]
+				}
+			],
+			"environment": [
+				"coastal",
+				"any"
+			],
+			"treasure": [
+				"implements",
+				"individual"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"miscTags": [
+				"MA",
+				"MLW",
+				"RA",
+				"RNG"
+			],
+			"conditionInflict": [
+				"charmed",
+				"poisoned"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"attachedItems": [
+				"pistol|dmg",
+				"scimitar|phb"
+			],
+			"trait": [
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the pirate is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the pirate instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				}
+			],
+			"isNpc": true,
+			"token": {
+				"name": "",
+				"source": ""
+			},
+			"damageTags": [
+				"I",
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Captain Blythe “Ace” Adderton",
+			"source": "MyHomebrew",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/SVNLtTR.png"
+			},
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "Genasi",
+						"prefix": "Earth"
+					}
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item half plate armor|PHB|half plate}"
+					],
+					"condition": "genasi body",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "15d8 + 75",
+				"average": 142
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 20,
+			"int": 18,
+			"wis": 16,
+			"cha": 24,
+			"passive": 18,
+			"languages": [
+				"Common",
+				"primordial",
+				"infernal"
+			],
+			"cr": "15",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Ace is a 5th-level spellcaster. His spellcasting ability is Charisma (spell save {@dc 17}, {@hit 9} to hit with spell attacks). He regains his expended spell slots when he finishes a short or long rest. He knows the following warlock spells."
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell control flames|XGE}",
+								"{@spell eldritch blast|XPHB}",
+								"{@spell thaumaturgy|XPHB}"
+							]
+						},
+						"5": {
+							"spells": [
+								"{@spell darkness|XPHB}",
+								"{@spell dimension door|XPHB}",
+								"{@spell summon greater demon|XGE}",
+								"{@spell wall of fire|XPHB}"
+							],
+							"slots": 3,
+							"lower": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Sealed Blade",
+					"entries": [
+						"Ace’s true form is that of a devil posessing a sword. When a creature picks up the sword, it must succeed on a {@dc 17} Charisma saving throw or die. Ace will then take control of the body, taking on the Intelligence, Wisdom and Charisma of Ace but retaining it’s other stats and hit points. ",
+						"Ace can use his bonus action to teleport its weapon into a free hand, or a bonus action to temporarily dismiss the weapon into a pocket dimension.",
+						"If Ace drops to 0 hit points, his spirit leaves his body and returns to the sword. While in this state, Ace is {@condition paralyzed}."
+					]
+				},
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"Magical darkness doesn't impede the ace's darkvision."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The hexblade wielder makes three attacks with its bonded weapon."
+					]
+				},
+				{
+					"name": "Sealed blade",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d6 + 10}) slashing damage, plus 14 ({@damage 4d6}) fire damage. On a crit, the wielder rolls damage dice three times, instead of twice. If a creature is reduced to 0 hit points by this weapon, it dies; its body is destroyed, its soul is absorbed by Ace, and Ace’s current body gains 54 ({@dice 12d6}) temporary hit points. Someone killed this way cannot be resurrected unless Ace’s Nabassu form is killed within 24 hours, or through the use of the Wish spell or similar magic."
+					]
+				},
+				{
+					"name": "Reform (Only if 20+ hit points)",
+					"entries": [
+						"Ace’s body and blade combust in a fiery explosion. Each creature within 20ft must succeed on a Dexterity saving throw or take {@damage 8d6} fire damage, or half as much on a successful save. Ace’s body is reduced to ashes, and his blade disappears to a pocket dimension. A Nabassu appears in the same space where his body was, with the same Intelligence, Wisdom and Charisma scores as Ace. This is Ace in his original form, which will return to his home plane automatically after 24 hours, or when it is reduced to 0 hit points."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"spellcastingTags": [
+				"CL"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"frightened"
+			],
+			"shortName": "Ace",
+			"save": {
+				"cha": "+12",
+				"dex": "+7"
+			},
+			"skill": {
+				"deception": "+12",
+				"intimidation": "+12",
+				"perception": "+8",
+				"arcana": "+9",
+				"athletics": "+9"
+			},
+			"traitTags": [
+				"Devil's Sight"
+			],
+			"damageTags": [
+				"F",
+				"S"
+			],
+			"damageTagsSpell": [
+				"F",
+				"O"
+			],
+			"savingThrowForced": [
+				"charisma"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"dexterity"
+			]
+		}
+	]
+}
