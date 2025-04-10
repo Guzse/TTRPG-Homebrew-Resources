@@ -2,13 +2,13 @@
     "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
 	"_meta": {
         "dateAdded": 1744305477,
-        "dateLastModified": 1744305477, // Unix timestamp
+        "dateLastModified": 1744305644,
 		"sources": [
 			{
 				"json": "HBGS",
 				"abbreviation": "HBGS",
 				"full": "Homebrew by Gilian Sterckx",
-				"version": "0.1.7",
+				"version": "0.1.10",
                 "url": "https://gilian-sterckx.com",
 				"authors": [
 					"Gilian Sterckx"
