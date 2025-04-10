@@ -1304,8 +1304,7 @@
 		},
 		{
 			"name": "Yuni (Pirate Admiral)",
-			"source": "MyHomebrew",
-			"page": 242,
+			"source": "Gilian Sterckx",
 			"size": [
 				"M"
 			],
@@ -1366,13 +1365,13 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The pirate makes three attacks, using Scimitar or Pistol in any combination."
+						"Yuni makes three attacks, using Scimitar or Pistol in any combination."
 					]
 				},
 				{
 					"name": "Scimitar",
 					"entries": [
-						"{@atkr m} {@hit 9}, reach 5 ft. {@h}15 ({@damage 3d6 + 5}) Slashing damage plus 7 ({@damage 2d6}) Poison damage, and the target suffers one of the following effects of the pirate's choice:",
+						"{@atkr m} {@hit 9}, reach 5 ft. {@h}15 ({@damage 3d6 + 5}) Slashing damage plus 7 ({@damage 2d6}) Poison damage, and the target suffers one of the following effects of Yuni's choice:",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
@@ -1381,14 +1380,14 @@
 									"type": "item",
 									"name": "Awestruck",
 									"entries": [
-										"The target has the {@condition Charmed|XPHB} condition until the start of the pirate's next turn."
+										"The target has the {@condition Charmed|XPHB} condition until the start of Yuni's next turn."
 									]
 								},
 								{
 									"type": "item",
 									"name": "Poison",
 									"entries": [
-										"The target has the {@condition Poisoned|XPHB} condition until the start of the pirate's next turn."
+										"The target has the {@condition Poisoned|XPHB} condition until the start of Yuni's next turn."
 									]
 								}
 							]
@@ -1406,7 +1405,7 @@
 				{
 					"name": "Rally (1/Day)",
 					"entries": [
-						"The pirate chooses up to three other creatures it can see within 30 feet. Until the start of the pirate's next turn, the targets have {@variantrule Advantage|XPHB} on attack rolls and saving throws."
+						"Yuni chooses up to three other creatures it can see within 30 feet. Until the start of Yuni's next turn, the targets have {@variantrule Advantage|XPHB} on attack rolls and saving throws."
 					]
 				}
 			],
@@ -1414,7 +1413,7 @@
 				{
 					"name": "Uncanny Dodge",
 					"entries": [
-						"{@actTrigger} The pirate takes damage. {@actResponse} The pirate reduces the damage by half, rounded down."
+						"{@actTrigger} Yuni takes damage. {@actResponse} Yuni reduces the damage by half, rounded down."
 					]
 				}
 			],
@@ -1453,15 +1452,11 @@
 				{
 					"name": "Evasion",
 					"entries": [
-						"If the pirate is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the pirate instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+						"If Yuni is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, Yuni instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
 					]
 				}
 			],
 			"isNpc": true,
-			"token": {
-				"name": "",
-				"source": ""
-			},
 			"damageTags": [
 				"I",
 				"P",
@@ -1470,7 +1465,7 @@
 		},
 		{
 			"name": "Captain Blythe “Ace” Adderton",
-			"source": "MyHomebrew",
+			"source": "Gilian Sterckx",
 			"tokenHref": {
 				"type": "external",
 				"url": "https://i.imgur.com/SVNLtTR.png"
