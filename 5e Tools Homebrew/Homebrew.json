@@ -16,8 +16,9 @@
 			}
 		]
 	},
-	"monster": 
-	{
+	"monster":
+    [
+        {
 			"name": "Ruiniel of Rivendell",
 			"source": "Homebrew",
 			"page": 0,
