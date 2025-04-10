@@ -2,7 +2,7 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "Homebrew_by_Gilian_Sterckx",
+				"json": "https://github.com/Guzse/TTRPG-Homebrew-Resources/blob/main/5e%20Tools%20Homebrew/Homebrew.json",
 				"abbreviation": "HBGS",
 				"full": "Homebrew by Gilian Sterckx",
 				"version": "0.1.6",
