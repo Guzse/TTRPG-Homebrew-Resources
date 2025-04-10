@@ -2,18 +2,318 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "MyHomebrew",
-				"abbreviation": "MHB",
-				"full": "My Homebrew",
-				"version": "1.0.0",
+				"json": "Homebrew",
+				"abbreviation": "HB",
+				"full": "Homebrew",
+				"version": "0.1.0",
 				"authors": [
-					"MyNameIsGuzse"
+					"Gilian Sterckx"
 				],
-				"color": "ff004f"
+				"convertedBy": [
+					"Gilian Sterckx"
+				],
+				"color": "2f9335"
 			}
 		]
 	},
-	"monster": [
+	"monster": 
+	{
+			"name": "Ruiniel of Rivendell",
+			"source": "Homebrew",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"elf"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item studded leather armor|PHB|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 6",
+				"average": 33
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 18,
+			"con": 12,
+			"int": 11,
+			"wis": 13,
+			"cha": 11,
+			"skill": {
+				"nature": "+2",
+				"perception": "+5",
+				"stealth": "+5",
+				"survival": "+3"
+			},
+			"passive": 15,
+			"languages": [
+				"Common",
+				"Elvish"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Orc Hunter",
+					"entries": [
+						"Ruiniel has advantage on Wisdom ({@skill Survival}) checks to track Orcs and Goblinoids, and on Intelligence ({@skill Nature}) checks to recall information about any of the forces of Sauron."
+					]
+				},
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"Ruiniel has advantage on saving throws against being {@condition charmed}, and magic can't put her to sleep."
+					]
+				},
+				{
+					"name": "Keen Hearing and Sight",
+					"entries": [
+						"Ruiniel has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or sight."
+					]
+				},
+				{
+					"name": "War Archery",
+					"entries": [
+						"A longbow deals one extra die of its damage when Ruiniel hits with it (included in the attack). In addition, when Ruiniel makes a ranged attack with a longbow, it doesn't have disadvantage on the attack roll from being within 5 feet of a hostile creature, though it may still have disadvantage from other sources."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Ruiniel makes two Shortsword attacks or two Longbow attacks."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 150/600 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage. Instead of dealing damage, Ruiniel can pin part of the target's clothing or body to the ground or to a nearby wall or tree. If it does so, the target is {@condition restrained}. A creature, including the target, can take its action to remove the arrow and free the {@condition restrained} target by succeeding on a {@dc 14} Strength check."
+					]
+				}
+			],
+			"attachedItems": [
+				"longbow|phb",
+				"shortsword|phb"
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Keen Senses"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"shortName": "Ruiniel",
+			"isNpc": true,
+			"token": {
+				"name": "Ruiniel",
+				"source": "SotLM"
+			},
+			"damageTags": [
+				"P"
+			]
+		},
+		{
+			"name": "Cogrick, the Mind Goblin",
+			"source": "Homebrew",
+			"page": 0,
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/knQp98o.png"
+			},
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Goblin"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"psychic armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 135,
+				"formula": "18d8 + 54"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 17,
+			"con": 16,
+			"int": 10,
+			"wis": 10,
+			"cha": 18,
+			"senses": [
+				"truesight 30 ft."
+			],
+			"passive": 10,
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"any two languages",
+				"telepathy 30 ft."
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Cogrick is a 7th-level spellcaster. His spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). He can cast the following sorcerer spells."
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell minor illusion}",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell arms of Hadar}",
+								"{@spell catapult|XGE}",
+								"{@spell comprehend languages}",
+								"{@spell dissonant whispers}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell blindness/deafness}",
+								"{@spell darkness}",
+								"{@spell detect thoughts}",
+								"{@spell hold person}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell fear}",
+								"{@spell intellect fortress|UAFighterRogueWizard}",
+								"{@spell sending}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell Evard's black tentacles}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Aura of Reality Warping",
+					"entries": [
+						"A creature that starts its turn within 10 feet of Cogrick takes 11 ({@damage 2d10}) psychic damage as its mind is addled with rippling psychic energy."
+					]
+				},
+				{
+					"name": "Nimble Escape",
+					"entries": [
+						"Cogrick can take the {@action Disengage} or {@action Hide} action as a bonus action on each of its turns."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Mind Sliver",
+					"entries": [
+						"Cogrick telepathically links minds with a creature within 60 feet of it that knows at least one language. The target must succeed on a {@dc 15} Intelligence saving throw or take 7 ({@damage 2d6}) psychic damage and incur disadvantage on the next saving throw it makes before the end of Cogrick's next turn."
+					]
+				}
+			],
+			"senseTags": [
+				"U"
+			],
+			"languageTags": [
+				"X",
+				"TP"
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"conditionInflictSpell": [
+				"blinded",
+				"deafened",
+				"frightened",
+				"paralyzed",
+				"restrained"
+			],
+			"shortName": true,
+			"damageTags": [
+				"Y"
+			],
+			"damageTagsSpell": [
+				"B",
+				"N",
+				"Y"
+			],
+			"savingThrowForced": [
+				"intelligence"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"strength",
+				"wisdom"
+			]
+		},
 		{
 			"name": "Yuni (Pirate Admiral)",
 			"source": "MyHomebrew",
