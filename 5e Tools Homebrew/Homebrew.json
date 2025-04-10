@@ -2,9 +2,9 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "Homebrew",
-				"abbreviation": "HB",
-				"full": "Homebrew",
+				"json": "Homebrew_by_Gilian_Sterckx",
+				"abbreviation": "HBGS",
+				"full": "Homebrew by Gilian Sterckx",
 				"version": "0.1.0",
 				"authors": [
 					"Gilian Sterckx"
@@ -18,6 +18,993 @@
 	},
 	"monster":
     [
+        {
+			"name": "Salvador Saltpeter",
+			"isNamedCreature": true,
+			"source": "Gilian Sterckx",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "genasi",
+						"prefix": "fire"
+					}
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"Arcane Armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 60",
+				"average": 150
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 19,
+			"con": 16,
+			"int": 20,
+			"wis": 17,
+			"cha": 18,
+			"skill": {
+				"history": "+10",
+				"perception": "+9",
+				"arcana": "+15",
+				"persuasion": "+9",
+				"investigation": "+10"
+			},
+			"passive": 19,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"Common (Asorae, Wesselyr)",
+				"Primordial"
+			],
+			"cr": "15",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Salvador is a 20th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 18}, {@hit 10} to hit with spell attacks). He has the following artificer spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt} (see \"Actions\" below)",
+								"{@spell mage hand}",
+								"{@spell mending}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell expeditious retreat}",
+								"{@spell shield}",
+								"{@spell thunderwave}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell blur}",
+								"{@spell heat metal}",
+								"{@spell scorching ray}",
+								"{@spell see invisibility}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell dispel magic}",
+								"{@spell fly}",
+								"{@spell haste}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell freedom of movement}",
+								"{@spell Mordenkainen's faithful hound}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell animate objects}",
+								"{@spell wall of force}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Arcane Armor",
+					"entries": [
+						"Any critical hit against Salvador becomes a normal hit."
+					]
+				},
+				{
+					"name": "Charge",
+					"entries": [
+						"If Salvador moves at least 10 feet straight toward a target and then hits it with his thunder gauntlets on the same turn, the target takes an extra 11 ({@damage 2d10}) slashing damage. If the target is a creature, it must succeed on a {@dc 19} Strength saving throw or be pushed up to 10 feet away and knocked {@condition prone}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Salvador makes 2 attacks with his thunder gauntlets."
+					]
+				},
+				{
+					"name": "Thunder Gauntlets",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}21 ({@damage 2d8 + 4}) bludgeoning damage plus 7 ({@damage 1d10}) thunder damage. A creature hit by this attack has disadvantage on attacks against anyone but Salvador until the start of his next turn."
+					]
+				},
+				{
+					"name": "Fire Bolt (Cantrip)",
+					"entries": [
+						"{@atk rs} {@hit 10} to hit, range 120 ft., one target. {@h}22 ({@damage 4d10}) fire damage."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"Salvador makes one weapon attack."
+					]
+				},
+				{
+					"name": "Cantrip",
+					"entries": [
+						"Salvador casts one of his cantrips."
+					]
+				},
+				{
+					"name": "Cast a Spell (Costs 2 Actions)",
+					"entries": [
+						"Salvador casts a spell of 2nd level or lower from his spell list that takes 1 action to cast."
+					]
+				},
+				{
+					"name": "Movement",
+					"entries": [
+						"Salvador moves up to his speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Evacuate (Costs 3 Actions)",
+					"entries": [
+						"Salvador casts Word of Recall on himself."
+					]
+				}
+			],
+			"traitTags": [
+				"Charge"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"P"
+			],
+			"spellcastingTags": [
+				"CA"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"A flamboyant ex-adventurer who became a merchant. Initially only focussed on selling magical items, he has since expanded into a major trading company."
+								]
+							}
+						]
+					}
+				]
+			},
+			"shortName": "Salvador",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"save": {
+				"int": "+10",
+				"cha": "+9",
+				"dex": "+9"
+			},
+			"reaction": [
+				{
+					"name": "Manipulate Gravity",
+					"entries": [
+						"When a Huge or smaller creature he can see ends its turn within 30 feet of him, Salvador can use his reaction to magically force it to make a Strength saving throw ({@dc 18}). On a failed save, he pulls the creature up to 25 feet directly to an unoccupied space. If he pulls the target to a space within 5 feet of him, he can make a melee weapon attack against it as part of this reaction."
+					]
+				}
+			],
+			"isNpc": true,
+			"damageTags": [
+				"B",
+				"F",
+				"S",
+				"T"
+			],
+			"damageTagsSpell": [
+				"B",
+				"F",
+				"P",
+				"S",
+				"T"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"savingThrowForcedSpell": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Redbeard",
+			"source": "Gilian Sterckx",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Shifter"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item +3 studded leather armor}"
+					]
+				},
+				{
+					"ac": 19,
+					"from": [
+						"{@item +3 studded leather armor}"
+					],
+					"condition": "shifted"
+				}
+			],
+			"hp": {
+				"formula": "27d8 + 135",
+				"average": 256
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 24,
+			"dex": 16,
+			"con": 20,
+			"int": 12,
+			"wis": 12,
+			"cha": 18,
+			"save": {
+				"con": "+10",
+				"str": "+12",
+				"dex": "+8"
+			},
+			"skill": {
+				"athletics": "+9",
+				"intimidation": "+8",
+				"perception": "+5",
+				"persuasion": "+8"
+			},
+			"passive": 15,
+			"cr": "16",
+			"trait": [
+				{
+					"name": "Indomitable (3/Day)",
+					"entries": [
+						"Redbeard can reroll a saving throw it fails. It must use the new roll."
+					]
+				},
+				{
+					"name": "Survivor",
+					"entries": [
+						"Redbeard regains 10 hit points at the start of its turn if it has fewer than half its hit points but at least 1 hit point."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Redbeard makes three Greatsword or Blunderbus attacks."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}12 ({@damage 3d6 + 7}) slashing damage. This attack counts as magical for the sake of overcoming resistances."
+					]
+				},
+				{
+					"name": "Blunderbus",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 15/60 ft., one target. {@h}6 ({@damage 3d8 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Giant Cleave {@recharge 5}",
+					"entries": [
+						"Sheer air pressure and willpower generate a long-distance strike with his greatsword in a 60-foot cone. Each creature in the line must make a Constitution saving throw. On a failed save, a creature takes {@damage 12d10} slashing damage and is knocked {@condition prone}."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Command Ally",
+					"entries": [
+						"Redbeard targets one ally it can see within 30 feet of it. if the target can see and hear the warlord, the target can make one weapon attack as a reaction and gains advantage on the attack roll."
+					]
+				},
+				{
+					"name": "Weapon Attack",
+					"entries": [
+						"Redbeard makes one Greatsword or Shortbow attack."
+					]
+				},
+				{
+					"name": "Frighten Foe (Costs 2 Actions)",
+					"entries": [
+						"Redbeard targets up to 3 creatures it can see within 30 feet of it. If the target can see and hear it, the target must succeed on a {@dc 16} Wisdom saving throw or be {@condition frightened} until the end of Redbeard's next turn."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"attachedItems": [
+				"greatsword|phb"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Gabriel Harrington, better known as \"Redbeard\", was once an admiral of the Vesserian Navy. Now, he is the captain of the Redbeard Pirates, and one of the most wanted men in the Otokalii Archipelago. His antics have made him many enemies, with both the navy as well as among other pirates.",
+					"He is said to have never lost a duel, and claims the title of strongest man in the archipelago."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://assets.legendkeeper.com/c690c3d4-7ab6-4fe9-8018-3cd7df722de1.webp"
+						}
+					}
+				]
+			},
+			"legendaryHeader": [
+				"Redbeard can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Redbeard can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The redbeard regains spent legendary actions at the start of its turn."
+			],
+			"bonus": [
+				{
+					"name": "Shift",
+					"entries": [
+						"Redbeard transforms for 1 minute. He gains 10 temporary hit points, and his AC increases by 1. Additionally, his Frighten Foe legendary action happens for free."
+					]
+				}
+			],
+			"isNpc": true,
+			"alias": [
+				"Gabriel Harrington"
+			],
+			"languages": [
+				"Common",
+				"Primordial"
+			],
+			"languageTags": [
+				"C",
+				"P"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Pirate",
+			"source": "Gilian Sterckx",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				{
+					"alignment": [
+						"A"
+					],
+					"note": "usually evil"
+				}
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 16,
+				"formula": "3d8 + 3"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 12,
+			"int": 11,
+			"wis": 13,
+			"cha": 11,
+			"skill": {
+				"nature": "+4",
+				"perception": "+5",
+				"stealth": "+6",
+				"survival": "+5"
+			},
+			"passive": 15,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Sailor Legs",
+					"entries": [
+						"The pirate has advantage on saving throws against being knocked {@condition prone}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The pirate makes two melee attacks or two ranged attacks."
+					]
+				},
+				{
+					"name": "Cutlass",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Pistol",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, ranged 150/600 ft., misfire 1, one target. {@h} 7 ({@damage 1d10 + 2}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"coastal",
+				"underwater",
+				"urban"
+			],
+			"attachedItems": [
+				"pistol|dmg"
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://i.imgur.com/SdcIKsS.png",
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Pirates are adept seafarers known for their maritime prowess, offering their services in exchange for plunder. While many engage in high-seas looting, some operate as privateers, pursuing bounties or navigating treacherous waters as guides. A select few serve as mercenaries, providing naval reconnaissance with their navigational expertise and cunning tactics."
+								]
+							}
+						]
+					}
+				]
+			},
+			"damageTags": [
+				"P"
+			]
+		},
+		{
+			"name": "Armeno Bastille (Cursed Sword)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"half-elf"
+				]
+			},
+			"source": "Gilian Sterckx",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item plate armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d8 + 48",
+				"average": 120
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 19,
+			"dex": 15,
+			"con": 16,
+			"int": 13,
+			"wis": 15,
+			"cha": 17,
+			"passive": 12,
+			"cr": "11",
+			"shortName": "Armeno",
+			"save": {
+				"wis": "+6",
+				"cha": "+7"
+			},
+			"trait": [
+				{
+					"name": "Aura of Protection",
+					"entries": [
+						"Armeno and friendly creatures within 30 feet of him have advantage on saving throws."
+					]
+				},
+				{
+					"name": "Craven Edge",
+					"entries": [
+						"Whenever Armeno damages a living creature with their cursed cutlass, that creature must roll a Constitution saving throw ({@dc 12}). On a failed save, the sword drains one point from the creature's Strength score and transfers it to the wielder (increasing to a maximum of 25 Strength) until the next short rest or long rest. Creatures brought to 0 Strength by this feature are slain."
+					]
+				},
+				{
+					"name": "Dark Aura",
+					"entries": [
+						"Armeno has advantage on intimidation checks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Armeno makes three attacks with its cursed cutlass."
+					]
+				},
+				{
+					"name": "Cursed Cutlass",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Cursed Cutlass (20+ STR)",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Cursed Cutlass (22+ STR)",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d8 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Cursed Cutlass (24+ STR)",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d8 + 7}) slashing damage."
+					]
+				},
+				{
+					"name": "Cursed Cutlass (25 STR)",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d8 + 7}) slashing damage + 7 ({@damage 2d6}) necrotic damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"damageTags": [
+				"N",
+				"S"
+			]
+		},
+		{
+			"name": "Armeno Bastille",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Half-elf"
+				]
+			},
+			"source": "Gilian Sterckx",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item plate armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d8 + 48",
+				"average": 120
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 19,
+			"dex": 15,
+			"con": 16,
+			"int": 13,
+			"wis": 15,
+			"cha": 17,
+			"passive": 12,
+			"cr": "11",
+			"shortName": "Armeno",
+			"save": {
+				"wis": "+6",
+				"cha": "+7"
+			},
+			"trait": [
+				{
+					"name": "Aura of Protection",
+					"entries": [
+						"The kingsguard and friendly creatures within 30 feet of it have advantage on saving throws."
+					]
+				},
+				{
+					"name": "Sacred Amulet",
+					"entries": [
+						"While wearing this amulet, Armeno's oath makes all his weapon attacks magical, and he deals an additional {@damage 4d6} radiant damage on melee attacks (included in the attack).",
+						"The amulet has 20 AC and 6 hit points.When destroyed, Armeno loses this feature."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Armeno makes three attacks with his cutlass."
+					]
+				},
+				{
+					"name": "Cutlass",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage plus 18 ({@damage 4d8}) radiant damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"R",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Longeye Carl",
+			"source": "Gilian Sterckx",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Human"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item chain shirt|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 104,
+				"formula": "19d8 + 19"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 12,
+			"int": 11,
+			"wis": 12,
+			"cha": 16,
+			"save": {
+				"dex": "+7",
+				"con": "+4",
+				"cha": "+6"
+			},
+			"skill": {
+				"arcana": "+3",
+				"perception": "+4",
+				"stealth": "+10",
+				"survival": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"languages": [
+				"Common",
+				"Elvish",
+				"Umbral"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Longeye's innate spellcasting ability is Charisma. It can cast the following spells innately, requiring no material components:"
+					],
+					"daily": {
+						"1": [
+							"{@spell mass healing word}"
+						],
+						"3": [
+							"{@spell misty step} (when in shadows, dim light, or darkness only)"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"The shadow fey has advantage on saving throws against being {@condition charmed}, and magic can't put it to sleep."
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"Longeye does an extra 7 ({@dice 2d6}) damage when it hits a target with a weapon attack that had advantage, or when the target is within 5 feet of Longeye that isn't {@condition incapacitated} and Longeye doesn't have disadvantage on the attack roll."
+					]
+				},
+				{
+					"name": "Traveler in Darkness",
+					"entries": [
+						"Longeye has advantage on Intelligence ({@skill Arcana}) checks made to know about shadow roads and shadow magic spells or items."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Longeye makes two ranged attacks."
+					]
+				},
+				{
+					"name": "Rapier",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Musket",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 120/480 ft., misfire 2, one target. {@h}8 ({@damage 1d12 + 4}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"any"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/token/Shadow%20Fey%20Forest%20Hunter.png",
+			"attachedItems": [
+				"musket|dmg",
+				"rapier|phb"
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Sneak Attack",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/Shadow%20Fey%20Forest%20Hunter.webp"
+						}
+					}
+				],
+				"entries": [
+					"Forest Hunter The shadows flicker slightly, and that's the only warning before a hail of arrows erupts from the concealed, black-skinned elf hidden in the gloom.",
+					"Dressed in exquisitely wrought mail and leather jerkins, forest hunters are even more lithe and graceful than most shadow fey. Physically, only their mannerisms and skills setting them apart from other shadow fey—usually too late.",
+					"Forest hunters roam the deep woods connected to shadow roads, as well as the dark reflections within the plane of Shadows. They are skilled trackers and stalkers, hunting animals and more dangerous game. Many forest hunters serve in the Wild Hunt, and a hunter that has at one time ridden at the Lord of the Hunt's side is afforded great respect, even fear, because of the common belief that such a hunter can implore the Lord of the Hunt to notice an enemy.",
+					{
+						"type": "section",
+						"name": "Shadow Fey",
+						"entries": [
+							{
+								"type": "quote",
+								"entries": [
+									"Kind words open even iron doors"
+								],
+								"by": "Twilight, a courtier to the shadow fey"
+							},
+							"To most, the shadow fey are little more than a dancing shadow among the leaves. To savants, they are the creatures that taught the shadowdancers all they know, and kept many secrets to themselves. They were once elves like all others, dwelling in mortal lands beneath the sun. An ancient catastrophe drove them to darkness, and now they are creatures of the shadow. Though they can be found on the Material Plane, they are inextricably tied to the plane of Shadows, and that is the seat of their power and culture.",
+							"Shadow fey superficially resemble other elves, but they're rarely mistaken for their lighted cousins. Skin tones among the shadow fey range from alabaster white to ebony black, with varying shades of gray in between, but they are otherwise lacking in color. A few have a scintillating shimmer to their skin. Many shadow fey grow horns that sweep out from their hair, varying in size from subtle nubs to obvious spikes. Others have shocking sets of teeth.",
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"type": "entries",
+												"name": "Dual Natured",
+												"entries": [
+													"The shadow fey are contradictory beings. They boast some of the best features of elves, tempered by aspects of a fouler nature. They can be deliberate and purposeful, but they're also given to perplexing whimsy. Mortal creatures trying to fathom shadow fey motivations are in for a maddening experience; they are often illogical, capricious, and seemingly thrive on annoying others."
+												]
+											},
+											{
+												"type": "entries",
+												"name": "Split Rulership",
+												"entries": [
+													"The Summer Court and Winter Court each rule the shadow fey in the appropriate season. The turning of these seasons follows no clear calendar or schedule, though it is skewed toward summer. The Queen of Night and Magic and the Moonlit King each claim dominion in turn, ruling over the Summer and Winter courts respectively.",
+													"Other fey call them the Scáthsidhe (pronounced scAH-shee), or shadow faeries, and they are usually counted among the unseelie, though they would dispute that characterization. They simply call themselves part of the sidhe, and consider themselves an extension of the Seelie Court."
+												]
+											},
+											{
+												"type": "entries",
+												"name": "The Reach of Darkness",
+												"entries": [
+													"Their bond with darkness allows the shadow fey to slip through distant spaces, traversing darkness itself from one place to another. Not only can every shadow fey slip from a shadow or patch of darkness to instantly appear elsewhere, they also control the mysterious and powerful shadow roads. Shadow roads are magical pathways that connect points on the Material Plane by dipping through the plane of shadow, allowing rapid and completely secret travel for the fey—and more importantly, for their weapons of war, their trade goods, and their allies.",
+													"The shadow fey all have an instinctive understanding of how a shadow road functions, and they are adept at both operating the entrance portals and navigating any hazards on the road. This bond with darkness has a price, of course, and the shadow fey shun the sun's light."
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"damageTags": [
+				"P"
+			]
+		},
         {
 			"name": "Ruiniel of Rivendell",
 			"source": "Homebrew",
