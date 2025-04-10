@@ -1,11 +1,15 @@
 {
+    "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
 	"_meta": {
+        "dateAdded": 1744305477,
+        "dateLastModified": 1744305477, // Unix timestamp
 		"sources": [
 			{
-				"json": "https://github.com/Guzse/TTRPG-Homebrew-Resources/blob/main/5e%20Tools%20Homebrew/Homebrew.json",
+				"json": "HBGS",
 				"abbreviation": "HBGS",
 				"full": "Homebrew by Gilian Sterckx",
 				"version": "0.1.7",
+                "url": "https://gilian-sterckx.com",
 				"authors": [
 					"Gilian Sterckx"
 				],
