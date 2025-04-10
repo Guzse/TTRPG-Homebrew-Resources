@@ -2,13 +2,13 @@
     "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
 	"_meta": {
         "dateAdded": 1744305477,
-        "dateLastModified": 1744305644,
+        "dateLastModified": 1744306066,
 		"sources": [
 			{
 				"json": "HBGS",
 				"abbreviation": "HBGS",
 				"full": "Homebrew by Gilian Sterckx",
-				"version": "0.1.10",
+				"version": "0.1.11",
                 "url": "https://gilian-sterckx.com",
 				"authors": [
 					"Gilian Sterckx"
@@ -25,7 +25,7 @@
         {
 			"name": "Salvador Saltpeter",
 			"isNamedCreature": true,
-			"source": "Gilian Sterckx",
+			"source": "GS - Forgelands",
 			"size": [
 				"M"
 			],
@@ -290,7 +290,7 @@
 		},
 		{
 			"name": "Redbeard",
-			"source": "Gilian Sterckx",
+			"source": "GS - Forgelands",
 			"size": [
 				"M"
 			],
@@ -474,7 +474,7 @@
 		},
 		{
 			"name": "Pirate",
-			"source": "Gilian Sterckx",
+			"source": "GS - Forgelands",
 			"size": [
 				"M"
 			],
@@ -607,7 +607,7 @@
 					"half-elf"
 				]
 			},
-			"source": "Gilian Sterckx",
+			"source": "GS - Forgelands",
 			"alignment": [
 				"N",
 				"E"
@@ -721,7 +721,7 @@
 					"Half-elf"
 				]
 			},
-			"source": "Gilian Sterckx",
+			"source": "GS - Forgelands",
 			"alignment": [
 				"N",
 				"E"
@@ -797,7 +797,7 @@
 		},
 		{
 			"name": "Longeye Carl",
-			"source": "Gilian Sterckx",
+			"source": "GS - Forgelands",
 			"size": [
 				"M"
 			],
@@ -1011,7 +1011,7 @@
 		},
         {
 			"name": "Ruiniel of Rivendell",
-			"source": "Homebrew",
+			"source": "GS - Embers of the Lonely Mountain",
 			"page": 0,
 			"size": [
 				"M"
@@ -1142,7 +1142,7 @@
 		},
 		{
 			"name": "Cogrick, the Mind Goblin",
-			"source": "Homebrew",
+			"source": "GS - Forgelands",
 			"page": 0,
 			"tokenHref": {
 				"type": "external",
@@ -1308,7 +1308,7 @@
 		},
 		{
 			"name": "Yuni Reyes",
-			"source": "Gilian Sterckx",
+			"source": "GS - Forgelands",
 			"size": [
 				"M"
 			],
@@ -1469,7 +1469,7 @@
 		},
 		{
 			"name": "Captain Blythe “Ace” Adderton",
-			"source": "Gilian Sterckx",
+			"source": "GS - Forgelands",
 			"tokenHref": {
 				"type": "external",
 				"url": "https://i.imgur.com/SVNLtTR.png"
